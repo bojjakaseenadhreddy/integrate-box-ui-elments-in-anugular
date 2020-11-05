@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  boxAccessToken: "XknQDM06ErQkfwFFGCywdIdPLHG1Yf1v",
+  boxFolderId: "0"
 };
 
 /*
