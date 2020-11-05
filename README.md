@@ -33,7 +33,27 @@
 
 </div>
 ```
-2. Open app.component.ts add the following code.
+2. Open index.html and add Css and script files through CDN links.
+``` 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BoxUiElementsInAngular</title>
+  <title>Box In Angular</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Add the Box style file CDN links here  -->
+  <link rel="stylesheet"  href="https://cdn01.boxcdn.net/platform/elements/11.0.2/en-US/explorer.css">
+</head>
+<body>
+  <!-- Add the Box script file CDN links here  -->
+  <script src="https://cdn01.boxcdn.net/platform/elements/11.0.2/en-US/explorer.js"></script>
+  <app-root></app-root>
+</body>
+</html>
+```
+3. Open app.component.ts add the following code.
 
 ```{js}
 
@@ -63,7 +83,7 @@ export class AppComponent implements OnInit {
 }
 
 ```
-3. Open environment.ts add access token and folder id. keep 0 to display all files
+4. Open environment.ts add access token and folder id. keep 0 to display all files
 ```
 export const environment = {
   production: false,
